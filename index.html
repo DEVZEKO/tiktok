@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TiktokDownloader</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+      <img src="logo.png" height='50px' alt="logo.png">
+      <h1>Video Downloader</h1>
+  </nav>
+<span class="material-symbols-outlined">menu</span>
+</header>
+<div class="container">
+      <div class="search-container">
+        <input type="url" id="link" placeholder="Paste video url from Tiktok" />
+        <button type="submit" onclick="downloadBtn()"><span class="material-symbols-outlined" id="searchbtn">
+          search
+        </span></button>
+      </div>
+       <figure>
+        <img src="banner.png" alt="TikTok banner">
+      </figure>
+<h1 id="hideResult">Search results:</h1> 
+<div class="errorResult">
+  <h1>"no results found!"</h1>
+  <p><small>Please try again.</small></p>
+</div>
+  <div class="link-container" id="hide">
+    <div class="frame">
+      <iframe src="" id="frame" frameborder="0" ></iframe>
+    </div>
+            <p id="title"></p>
+       <a href="" id="a">Download <span class="material-symbols-outlined">
+           download
+         </span></a>
+  </div> 
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
